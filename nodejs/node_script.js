@@ -6,8 +6,7 @@ var reader = readline.createInterface({
 });
 
 reader.on('line', function (line) {
-    console.log(line);
-    var max = line;
+    let max = line;
     for (let num = 0; num <= max; num++) {
         console.log(fb.getFizzBuzzAns(num));
     }
