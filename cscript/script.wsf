@@ -1,0 +1,11 @@
+<job>
+    <script language="JavaScript" src="../fizz_buzz.js"></script>
+    <script language="JavaScript">
+        var objArgs = WScript.Arguments;
+        var end = objArgs(0) || 0;
+        var num = 0;
+        for (num = 1; num <= end; num++) {
+            WScript.Echo(getFizzBuzzAns(num));
+        }
+    </script>
+</job>
