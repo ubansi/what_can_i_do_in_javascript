@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fizz Buzz</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <input type="text" id="input" oninput="calc(this.value)"></input>
+    <ul id="answer"></ul>
+    <script src="../fizz_buzz.js"></script>
+    <script>
+        function calc(end) {
+            var ans = '';
+            for (let num = 1; num <= end; num++) {
+                ans += '<li>' + getFizzBuzzAns(num) + '</li>';
+            }
+            document.getElementById('answer').innerHTML = ans;
+        }
+
+    </script>
+</body>
+
+</html>
