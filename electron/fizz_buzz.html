@@ -9,12 +9,13 @@
 <body>
     <input type="text" id="input" oninput="calc(this.value)"></input>
     <ul id="answer"></ul>
-    <script src="../fizz_buzz.js"></script>
     <script>
+        const fizzBuzz = require('./../fizz_buzz_module.js');
+
         function calc(end) {
             var ans = '';
             for (let num = 1; num <= end; num++) {
-                ans += '<li>' + getFizzBuzzAns(num) + '</li>';
+                ans += '<li>' + fizzBuzz.getFizzBuzzAns(num) + '</li>';
             }
             document.getElementById('answer').innerHTML = ans;
         }
